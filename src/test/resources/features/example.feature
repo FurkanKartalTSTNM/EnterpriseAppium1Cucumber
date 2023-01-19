@@ -1,0 +1,4 @@
+Feature: OpenApplication
+@openApp
+Scenario: Open Application
+Given Wait 5 seconds
