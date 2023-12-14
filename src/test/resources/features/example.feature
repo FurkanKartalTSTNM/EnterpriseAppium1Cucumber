@@ -3,23 +3,23 @@ Feature: OpenApplication
 Scenario: Open Application
 Given Wait 5 seconds
 
-@openApp
+@app2
 Scenario: Open Application
 Given Wait 5 seconds
 
-@openApp
+@oapp3
 Scenario: Open Application
 Given Wait 5 seconds
 
-@openApp
+@app4
 Scenario: Open Application
 Given Wait 5 seconds
 
-@openApp
+@open5
 Scenario: Open Application
 Given Wait 5 seconds
 
-@openApp
+@open6
 Scenario: Open Application
 Given Wait 5 seconds
 
