@@ -22,17 +22,15 @@ public class Steps {
 
     @Before
     public static void setUp() throws Exception {
-        DesiredCapabilities capabilities = new DesiredCapabilities();
+    DesiredCapabilities capabilities = new DesiredCapabilities();
 
         if (!StringUtils.isEmpty(System.getProperty("key"))) {
             capabilities.setCapability("key", System.getProperty("key"));
             if (System.getProperty("platform").equals("ANDROID")) {
                 capabilities.setCapability(CapabilityType.PLATFORM_NAME, Platform.ANDROID);
-                capabilities.setCapability("app", "android_app_url");
                 driver = new AndroidDriver<MobileElement>(new URL(hubURL), capabilities);
             } else {
                 capabilities.setCapability(CapabilityType.PLATFORM_NAME, Platform.MAC);
-                capabilities.setCapability("app", "ios_app_url");
                 driver = new IOSDriver<MobileElement>(new URL(hubURL), capabilities);
             }
         }
@@ -47,8 +45,8 @@ public class Steps {
     }
 
     /**
-     * @param seconds
-     */
+    * @param seconds
+    */
     @Given("^Wait (\\d+) seconds$")
     public void waitSeconds(int seconds) {
         wait(seconds);
