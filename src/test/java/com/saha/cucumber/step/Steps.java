@@ -16,7 +16,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 
 public class Steps {
 
-    public static final String hubURL = "http://hub.testinium.io/wd/hub";
+    public static final String hubURL = "http://172.25.1.25:4444/wd/hub";
     protected static AppiumDriver<MobileElement> driver;
 
 
