@@ -30,7 +30,8 @@ public class Steps {
                 capabilities.setCapability(CapabilityType.PLATFORM_NAME, Platform.ANDROID);
                 driver = new AndroidDriver<MobileElement>(new URL(hubURL), capabilities);
             } else {
-                capabilities.setCapability(CapabilityType.PLATFORM_NAME, Platform.MAC);
+                capabilities.setCapability(CapabilityType.PLATFORM_NAME, Platform.IOS);
+                capabilities.setCapability("bundleId", "com.pharos.Gratis");
                 driver = new IOSDriver<MobileElement>(new URL(hubURL), capabilities);
             }
         }
