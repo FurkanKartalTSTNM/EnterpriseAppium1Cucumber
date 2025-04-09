@@ -11,7 +11,9 @@ import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.lang3.StringUtils;
+import org.openqa.selenium.By;
 import org.openqa.selenium.Platform;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
@@ -54,6 +56,20 @@ public class Steps {
     public void waitSeconds(int seconds) {
         wait(seconds);
     }
+
+    @Given("^Element with id \"([^\"]*)\" is clicked$")
+    public void clickElementById(String elementId) {
+        WebElement element = driver.findElement(By.id(elementId));
+        element.click();
+    }
+
+    @Given("^Element with xpath \"([^\"]*)\" is clicked$")
+    public void clickElementByXpath(String xpath) {
+        WebElement element = driver.findElement(By.xpath(xpath));
+        element.click();
+    }
+
+
 
     public void wait(int seconds) {
         try {
