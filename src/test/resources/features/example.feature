@@ -373,7 +373,7 @@ Given Wait 5 seconds
     Then Wait 2 seconds
 
   @BasicTiklamalarAndroidFail
-  Scenario: BasicTiklamalarAndroid06
+  Scenario: BasicTiklamalarAndroidFail
     Given Wait 5 seconds
     Then Element with id "com.gratis.android:id/nav_graph_trademarks" is clicked
     Then Wait 2 seconds
