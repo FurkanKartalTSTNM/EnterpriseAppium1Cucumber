@@ -8,6 +8,8 @@ import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import java.net.URL;
+import java.util.concurrent.TimeUnit;
+
 import org.apache.commons.lang3.StringUtils;
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.remote.CapabilityType;
@@ -55,8 +57,7 @@ public class Steps {
 
     public void wait(int seconds) {
         try {
-            Thread.sleep(seconds * 1000);
-            driver.getPageSource();
+            TimeUnit.SECONDS.sleep(seconds);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
