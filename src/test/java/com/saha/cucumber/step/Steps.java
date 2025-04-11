@@ -4,6 +4,7 @@ import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.ios.IOSDriver;
+import io.appium.java_client.remote.AndroidMobileCapabilityType;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
@@ -31,7 +32,8 @@ public class Steps {
         if (!StringUtils.isEmpty(System.getProperty("key"))) {
             capabilities.setCapability("key", System.getProperty("key"));
             if (System.getProperty("platform").equals("ANDROID")) {
-                capabilities.setCapability(CapabilityType.PLATFORM_NAME, Platform.ANDROID);
+                capabilities.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, "com.gratis.android");
+                capabilities.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, "com.app.gratis.ui.splash.SplashActivity");                capabilities.setCapability(CapabilityType.PLATFORM_NAME, Platform.ANDROID);
                 driver = new AndroidDriver<MobileElement>(new URL(hubURL), capabilities);
             } else {
                 capabilities.setCapability(CapabilityType.PLATFORM_NAME, Platform.IOS);
