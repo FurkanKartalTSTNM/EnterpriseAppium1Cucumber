@@ -1,32 +1,24 @@
 Feature: OpenApplication
 
-@BasicTiklamalarIOS01
-Scenario: BasicTiklamalarIOS01
-Given Wait 5 seconds
-  Then Element with xpath "//XCUIElementTypeButton[@name='Markalar']" is clicked
-  Then Wait 2 seconds
-  Then Element with xpath "//XCUIElementTypeButton[@name='Kategoriler']" is clicked
-  Then Wait 2 seconds
-  Then Element with xpath "//XCUIElementTypeButton[@name='Kampanyalar']" is clicked
-  Then Wait 2 seconds
-  Then Element with xpath "//XCUIElementTypeButton[@name='Markalar']" is clicked
-  Then Wait 2 seconds
-  Then Element with xpath "//XCUIElementTypeButton[@name='Kategoriler']" is clicked
-  Then Wait 2 seconds
-  Then Element with xpath "//XCUIElementTypeButton[@name='Kampanyalar']" is clicked
-  Then Wait 2 seconds
-  Then Element with xpath "//XCUIElementTypeButton[@name='Markalar']" is clicked
-  Then Wait 2 seconds
-  Then Element with xpath "//XCUIElementTypeButton[@name='Kategoriler']" is clicked
-  Then Wait 2 seconds
-  Then Element with xpath "//XCUIElementTypeButton[@name='Kampanyalar']" is clicked
-  Then Wait 2 seconds
-  Then Element with xpath "//XCUIElementTypeButton[@name='Markalar']" is clicked
-  Then Wait 2 seconds
-  Then Element with xpath "//XCUIElementTypeButton[@name='Kategoriler']" is clicked
-  Then Wait 2 seconds
-  Then Element with xpath "//XCUIElementTypeButton[@name='Kampanyalar']" is clicked
-  Then Wait 2 seconds
+  @BasicTiklamalarIOS01
+  Scenario: BasicTiklamalarIOS01
+    Given Wait 5 seconds
+    Then Element with xpath "//XCUIElementTypeButton[@name='Markalar']" is clicked
+    Then Wait 2 seconds
+    Then Element with xpath "//XCUIElementTypeButton[@name='Kategoriler']" is clicked
+    Then Wait 2 seconds
+    Then Element with xpath "//XCUIElementTypeButton[@name='Kampanyalar']" is clicked
+    Then Wait 2 seconds
+    Then Element with xpath "//XCUIElementTypeButton[@name='Markalar']" is clicked
+    Then Wait 2 seconds
+    Then Element with xpath "//XCUIElementTypeButton[@name='Kategoriler']" is clicked
+    Then Wait 2 seconds
+    Then Element with xpath "//XCUIElementTypeButton[@name='Kampanyalar']" is clicked
+    Then Wait 2 seconds
+    Then Element with xpath "//XCUIElementTypeButton[@name='Markalar']" is clicked
+    Then Wait 2 seconds
+
+    Then Wait 2 seconds
 
   @BasicTiklamalarIOS02
   Scenario: BasicTiklamalarIOS02
@@ -55,28 +47,40 @@ Given Wait 5 seconds
     Then Wait 2 seconds
     Then Element with xpath "//XCUIElementTypeButton[@name='Kampanyalar']" is clicked
     Then Wait 2 seconds
+    Then Element with xpath "//XCUIElementTypeButton[@name='Markalar']" is clicked
+    Then Wait 2 seconds
+    Then Element with xpath "//XCUIElementTypeButton[@name='Kategoriler']" is clicked
+    Then Wait 2 seconds
+    Then Element with xpath "//XCUIElementTypeButton[@name='Kampanyalar']" is clicked
+    Then Wait 2 seconds
+    Then Element with xpath "//XCUIElementTypeButton[@name='Markalar']" is clicked
+    Then Wait 2 seconds
+    Then Element with xpath "//XCUIElementTypeButton[@name='Kategoriler']" is clicked
+    Then Wait 2 seconds
+    Then Element with xpath "//XCUIElementTypeButton[@name='Kampanyalar']" is clicked
+    Then Wait 2 seconds
+    Then Element with xpath "//XCUIElementTypeButton[@name='Markalar']" is clicked
+    Then Wait 2 seconds
+    Then Element with xpath "//XCUIElementTypeButton[@name='Kategoriler']" is clicked
+    Then Wait 2 seconds
+    Then Element with xpath "//XCUIElementTypeButton[@name='Kampanyalar']" is clicked
+    Then Wait 2 seconds
+    Then Element with xpath "//XCUIElementTypeButton[@name='Markalar']" is clicked
+    Then Wait 2 seconds
+    Then Element with xpath "//XCUIElementTypeButton[@name='Kategoriler']" is clicked
+    Then Wait 2 seconds
+    Then Element with xpath "//XCUIElementTypeButton[@name='Kampanyalar']" is clicked
+    Then Wait 2 seconds
+    Then Element with xpath "//XCUIElementTypeButton[@name='Markalar']" is clicked
+    Then Wait 2 seconds
+    Then Element with xpath "//XCUIElementTypeButton[@name='Kategoriler']" is clicked
+    Then Wait 2 seconds
+    Then Element with xpath "//XCUIElementTypeButton[@name='Kampanyalar']" is clicked
+
 
   @BasicTiklamalarIOS03
   Scenario: BasicTiklamalarIOS03
     Given Wait 5 seconds
-    Then Element with xpath "//XCUIElementTypeButton[@name='Markalar']" is clicked
-    Then Wait 2 seconds
-    Then Element with xpath "//XCUIElementTypeButton[@name='Kategoriler']" is clicked
-    Then Wait 2 seconds
-    Then Element with xpath "//XCUIElementTypeButton[@name='Kampanyalar']" is clicked
-    Then Wait 2 seconds
-    Then Element with xpath "//XCUIElementTypeButton[@name='Markalar']" is clicked
-    Then Wait 2 seconds
-    Then Element with xpath "//XCUIElementTypeButton[@name='Kategoriler']" is clicked
-    Then Wait 2 seconds
-    Then Element with xpath "//XCUIElementTypeButton[@name='Kampanyalar']" is clicked
-    Then Wait 2 seconds
-    Then Element with xpath "//XCUIElementTypeButton[@name='Markalar']" is clicked
-    Then Wait 2 seconds
-    Then Element with xpath "//XCUIElementTypeButton[@name='Kategoriler']" is clicked
-    Then Wait 2 seconds
-    Then Element with xpath "//XCUIElementTypeButton[@name='Kampanyalar']" is clicked
-    Then Wait 2 seconds
     Then Element with xpath "//XCUIElementTypeButton[@name='Markalar']" is clicked
     Then Wait 2 seconds
     Then Element with xpath "//XCUIElementTypeButton[@name='Kategoriler']" is clicked
@@ -99,17 +103,6 @@ Given Wait 5 seconds
     Then Wait 2 seconds
     Then Element with xpath "//XCUIElementTypeButton[@name='Kampanyalar']" is clicked
     Then Wait 2 seconds
-    Then Element with xpath "//XCUIElementTypeButton[@name='Markalar']" is clicked
-    Then Wait 2 seconds
-    Then Element with xpath "//XCUIElementTypeButton[@name='Kategoriler']" is clicked
-    Then Wait 2 seconds
-    Then Element with xpath "//XCUIElementTypeButton[@name='Kampanyalar']" is clicked
-    Then Wait 2 seconds
-    Then Element with xpath "//XCUIElementTypeButton[@name='Markalar']" is clicked
-    Then Wait 2 seconds
-    Then Element with xpath "//XCUIElementTypeButton[@name='Kategoriler']" is clicked
-    Then Wait 2 seconds
-    Then Element with xpath "//XCUIElementTypeButton[@name='Kampanyalar']" is clicked
     Then Wait 2 seconds
 
   @BasicTiklamalarIOS05
@@ -139,34 +132,21 @@ Given Wait 5 seconds
     Then Wait 2 seconds
     Then Element with xpath "//XCUIElementTypeButton[@name='Kampanyalar']" is clicked
     Then Wait 2 seconds
+    Then Element with xpath "//XCUIElementTypeButton[@name='Kampanyalar']" is clicked
+    Then Wait 2 seconds
+    Then Element with xpath "//XCUIElementTypeButton[@name='Markalar']" is clicked
+    Then Wait 2 seconds
+    Then Element with xpath "//XCUIElementTypeButton[@name='Kategoriler']" is clicked
+    Then Wait 2 seconds
+    Then Element with xpath "//XCUIElementTypeButton[@name='Kampanyalar']" is clicked
+    Then Wait 2 seconds
+    Then Element with xpath "//XCUIElementTypeButton[@name='Markalar']" is clicked
+    Then Wait 2 seconds
+    Then Element with xpath "//XCUIElementTypeButton[@name='Kategoriler']" is clicked
+    Then Wait 2 seconds
+    Then Element with xpath "//XCUIElementTypeButton[@name='Kampanyalar']" is clicked
 
-  @BasicTiklamalarIOSFail
-  Scenario: BasicTiklamalarIOS02
-    Given Wait 5 seconds
-    Then Element with xpath "//XCUIElementTypeButton[@name='Markalar']" is clicked
-    Then Wait 2 seconds
-    Then Element with xpath "//XCUIElementTypeButton[@name='Kategoriler']" is clicked
-    Then Wait 2 seconds
-    Then Element with xpath "//XCUIElementTypeButton[@name='Kampanyalarsadsadsad']" is clicked
-    Then Wait 2 seconds
-    Then Element with xpath "//XCUIElementTypeButton[@name='Markalar']" is clicked
-    Then Wait 2 seconds
-    Then Element with xpath "//XCUIElementTypeButton[@name='Kategoriler']" is clicked
-    Then Wait 2 seconds
-    Then Element with xpath "//XCUIElementTypeButton[@name='Kampanyalar']" is clicked
-    Then Wait 2 seconds
-    Then Element with xpath "//XCUIElementTypeButton[@name='Markalar']" is clicked
-    Then Wait 2 seconds
-    Then Element with xpath "//XCUIElementTypeButton[@name='Kategoriler']" is clicked
-    Then Wait 2 seconds
-    Then Element with xpath "//XCUIElementTypeButton[@name='Kampanyalar']" is clicked
-    Then Wait 2 seconds
-    Then Element with xpath "//XCUIElementTypeButton[@name='Markalar']" is clicked
-    Then Wait 2 seconds
-    Then Element with xpath "//XCUIElementTypeButton[@name='Kategoriler']" is clicked
-    Then Wait 2 seconds
-    Then Element with xpath "//XCUIElementTypeButton[@name='Kampanyalar']" is clicked
-    Then Wait 2 seconds
+
 
   @BasicTiklamalarAndroid01
   Scenario: BasicTiklamalarAndroid01
@@ -289,20 +269,6 @@ Given Wait 5 seconds
     Then Wait 2 seconds
     Then Element with id "com.gratis.android:id/nav_graph_categories" is clicked
     Then Wait 2 seconds
-    Then Element with id "com.gratis.android:id/nav_graph_campaign" is clicked
-    Then Wait 2 seconds
-    Then Element with id "com.gratis.android:id/nav_graph_trademarks" is clicked
-    Then Wait 2 seconds
-    Then Element with id "com.gratis.android:id/nav_graph_categories" is clicked
-    Then Wait 2 seconds
-    Then Element with id "com.gratis.android:id/nav_graph_campaign" is clicked
-    Then Wait 2 seconds
-    Then Element with id "com.gratis.android:id/nav_graph_trademarks" is clicked
-    Then Wait 2 seconds
-    Then Element with id "com.gratis.android:id/nav_graph_categories" is clicked
-    Then Wait 2 seconds
-    Then Element with id "com.gratis.android:id/nav_graph_campaign" is clicked
-    Then Wait 2 seconds
 
   @BasicTiklamalarAndroid05
   Scenario: BasicTiklamalarAndroid05
@@ -317,30 +283,22 @@ Given Wait 5 seconds
     Then Wait 2 seconds
     Then Element with id "com.gratis.android:id/nav_graph_categories" is clicked
     Then Wait 2 seconds
-    Then Element with id "com.gratis.android:id/nav_graph_campaign" is clicked
-    Then Wait 2 seconds
-    Then Element with id "com.gratis.android:id/nav_graph_trademarks" is clicked
-    Then Wait 2 seconds
-    Then Element with id "com.gratis.android:id/nav_graph_categories" is clicked
-    Then Wait 2 seconds
-    Then Element with id "com.gratis.android:id/nav_graph_campaign" is clicked
-    Then Wait 2 seconds
-    Then Element with id "com.gratis.android:id/nav_graph_trademarks" is clicked
-    Then Wait 2 seconds
-    Then Element with id "com.gratis.android:id/nav_graph_categories" is clicked
-    Then Wait 2 seconds
-    Then Element with id "com.gratis.android:id/nav_graph_campaign" is clicked
-    Then Wait 2 seconds
-    Then Element with id "com.gratis.android:id/nav_graph_trademarks" is clicked
-    Then Wait 2 seconds
-    Then Element with id "com.gratis.android:id/nav_graph_categories" is clicked
-    Then Wait 2 seconds
-    Then Element with id "com.gratis.android:id/nav_graph_campaign" is clicked
-    Then Wait 2 seconds
 
   @BasicTiklamalarAndroid06
   Scenario: BasicTiklamalarAndroid06
     Given Wait 5 seconds
+    Then Element with id "com.gratis.android:id/nav_graph_trademarks" is clicked
+    Then Wait 2 seconds
+    Then Element with id "com.gratis.android:id/nav_graph_categories" is clicked
+    Then Wait 2 seconds
+    Then Element with id "com.gratis.android:id/nav_graph_campaign" is clicked
+    Then Wait 2 seconds
+    Then Element with id "com.gratis.android:id/nav_graph_trademarks" is clicked
+    Then Wait 2 seconds
+    Then Element with id "com.gratis.android:id/nav_graph_categories" is clicked
+    Then Wait 2 seconds
+    Then Element with id "com.gratis.android:id/nav_graph_campaign" is clicked
+    Then Wait 2 seconds
     Then Element with id "com.gratis.android:id/nav_graph_trademarks" is clicked
     Then Wait 2 seconds
     Then Element with id "com.gratis.android:id/nav_graph_categories" is clicked
@@ -391,19 +349,33 @@ Given Wait 5 seconds
     Then Wait 2 seconds
     Then Element with id "com.gratis.android:id/nav_graph_categories" is clicked
     Then Wait 2 seconds
-    Then Element with id "com.gratis.android:id/nav_graph_campaign" is clicked
-    Then Wait 2 seconds
-    Then Element with id "com.gratis.android:id/nav_graph_trademarks" is clicked
-    Then Wait 2 seconds
-    Then Element with id "com.gratis.android:id/nav_graph_categories" is clicked
-    Then Wait 2 seconds
-    Then Element with id "com.gratis.android:id/nav_graph_campaign" is clicked
-    Then Wait 2 seconds
-    Then Element with id "com.gratis.android:id/nav_graph_trademarks" is clicked
-    Then Wait 2 seconds
-    Then Element with id "com.gratis.android:id/nav_graph_categories" is clicked
-    Then Wait 2 seconds
-    Then Element with id "com.gratis.android:id/nav_graph_campaign" is clicked
-    Then Wait 2 seconds
 
 
+
+  @BasicTiklamalarIOSFail
+  Scenario: BasicTiklamalarIOS02
+    Given Wait 5 seconds
+    Then Element with xpath "//XCUIElementTypeButton[@name='Markalar']" is clicked
+    Then Wait 2 seconds
+    Then Element with xpath "//XCUIElementTypeButton[@name='Kategoriler']" is clicked
+    Then Wait 2 seconds
+    Then Element with xpath "//XCUIElementTypeButton[@name='Kampanyalarsadsadsad']" is clicked
+    Then Wait 2 seconds
+    Then Element with xpath "//XCUIElementTypeButton[@name='Markalar']" is clicked
+    Then Wait 2 seconds
+    Then Element with xpath "//XCUIElementTypeButton[@name='Kategoriler']" is clicked
+    Then Wait 2 seconds
+    Then Element with xpath "//XCUIElementTypeButton[@name='Kampanyalar']" is clicked
+    Then Wait 2 seconds
+    Then Element with xpath "//XCUIElementTypeButton[@name='Markalar']" is clicked
+    Then Wait 2 seconds
+    Then Element with xpath "//XCUIElementTypeButton[@name='Kategoriler']" is clicked
+    Then Wait 2 seconds
+    Then Element with xpath "//XCUIElementTypeButton[@name='Kampanyalar']" is clicked
+    Then Wait 2 seconds
+    Then Element with xpath "//XCUIElementTypeButton[@name='Markalar']" is clicked
+    Then Wait 2 seconds
+    Then Element with xpath "//XCUIElementTypeButton[@name='Kategoriler']" is clicked
+    Then Wait 2 seconds
+    Then Element with xpath "//XCUIElementTypeButton[@name='Kampanyalar']" is clicked
+    Then Wait 2 seconds

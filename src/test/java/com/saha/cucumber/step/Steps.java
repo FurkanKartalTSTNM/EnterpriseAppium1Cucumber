@@ -27,13 +27,19 @@ public class Steps {
 
     @Before
     public static void setUp() throws Exception {
-    DesiredCapabilities capabilities = new DesiredCapabilities();
+        DesiredCapabilities capabilities = new DesiredCapabilities();
 
         if (!StringUtils.isEmpty(System.getProperty("key"))) {
             capabilities.setCapability("key", System.getProperty("key"));
             if (System.getProperty("platform").equals("ANDROID")) {
-                capabilities.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, "com.gratis.android");
-                capabilities.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, "com.app.gratis.ui.splash.SplashActivity");                capabilities.setCapability(CapabilityType.PLATFORM_NAME, Platform.ANDROID);
+                capabilities
+                        .setCapability(AndroidMobileCapabilityType.APP_PACKAGE,
+                                "com.gratis.android");
+
+                capabilities
+                        .setCapability(AndroidMobileCapabilityType.APP_ACTIVITY,
+                                "com.app.gratis.ui.splash.SplashActivity");
+                capabilities.setCapability(CapabilityType.PLATFORM_NAME, Platform.ANDROID);
                 driver = new AndroidDriver<MobileElement>(new URL(hubURL), capabilities);
             } else {
                 capabilities.setCapability(CapabilityType.PLATFORM_NAME, Platform.IOS);
@@ -52,8 +58,8 @@ public class Steps {
     }
 
     /**
-    * @param seconds
-    */
+     * @param seconds
+     */
     @Given("^Wait (\\d+) seconds$")
     public void waitSeconds(int seconds) {
         wait(seconds);
