@@ -14,7 +14,7 @@
         <h2.version>1.4.200</h2.version>
         <selenium.java.version>3.141.59</selenium.java.version>
         <commons.lang3.version>3.5</commons.lang3.version>
-        <cucumber.junit.version>6.8.1</cucumber.junit.version>
+        <cucumber.junit.version>4.8.0</cucumber.junit.version>
         <log4j.version>1.2.17</log4j.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
