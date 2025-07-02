@@ -21,7 +21,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 
 public class Steps {
 
-    public static final String hubURL = "http://172.25.1.159:4444/wd/hub";
+    public static final String hubURL = "http://host.docker.internal:4444/wd/hub";
     protected static AppiumDriver<MobileElement> driver;
 
 
