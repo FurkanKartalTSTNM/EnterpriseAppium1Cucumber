@@ -10,7 +10,6 @@
     <name>sample-appium-cucumber-project</name>
 
     <properties>
-        <maven.complier.version>3.6.0</maven.complier.version>
         <java.version>1.8</java.version>
         <h2.version>1.4.200</h2.version>
         <selenium.java.version>3.141.59</selenium.java.version>
@@ -53,17 +52,30 @@
             <version>${cucumber.junit.version}</version>
             <scope>test</scope>
         </dependency>
+
         <dependency>
             <groupId>log4j</groupId>
             <artifactId>log4j</artifactId>
             <version>${log4j.version}</version>
         </dependency>
+
         <dependency>
             <groupId>io.appium</groupId>
             <artifactId>java-client</artifactId>
             <version>7.0.0</version>
         </dependency>
+
     </dependencies>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.aspectj</groupId>
+                <artifactId>aspectjweaver</artifactId>
+                <version>1.9.19</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
     <build>
         <plugins>
