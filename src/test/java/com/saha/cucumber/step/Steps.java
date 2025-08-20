@@ -9,6 +9,7 @@ import io.appium.java_client.AppiumDriver;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebElement;
@@ -95,23 +96,27 @@ public class Steps {
         }
     }
 
-    @Given("^Wait (\\d+) seconds$")
-    public void waitSeconds(int seconds) { wait(seconds); }
-
-    @Given("^Element with id \"([^\"]*)\" is clicked$")
-    public void clickElementById(String elementId) {
-        WebElement element = driver.findElement(By.id(elementId));
-        element.click();
+    private static void sleepSeconds(int seconds) {
+        try {
+            TimeUnit.SECONDS.sleep(seconds);
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
+        }
     }
 
-    @Given("^Element with xpath \"([^\"]*)\" is clicked$")
-    public void clickElementByXpath(String xpath) {
-        WebElement element = driver.findElement(By.xpath(xpath));
-        element.click();
+    @Given("Wait {int} seconds")
+    @Then("Wait {int} seconds")
+    public void wait_seconds(int seconds) {
+        sleepSeconds(seconds);
     }
 
-    public void wait(int seconds) {
-        try { TimeUnit.SECONDS.sleep(seconds); }
-        catch (InterruptedException e) { Thread.currentThread().interrupt(); }
+    @Then("Element with id {string} is clicked")
+    public void element_with_id_is_clicked(String elementId) {
+        driver.findElement(By.id(elementId)).click();
+    }
+
+    @Then("Element with xpath {string} is clicked")
+    public void element_with_xpath_is_clicked(String xpath) {
+        driver.findElement(By.xpath(xpath)).click();
     }
 }
