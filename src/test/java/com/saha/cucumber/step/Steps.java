@@ -104,8 +104,8 @@ public class Steps {
         }
     }
 
-    @Given("Wait {int} seconds")
     @Then("Wait {int} seconds")
+// veya @Given("Wait {int} seconds")
     public void wait_seconds(int seconds) {
         sleepSeconds(seconds);
     }
