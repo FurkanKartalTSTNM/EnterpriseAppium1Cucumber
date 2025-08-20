@@ -19,6 +19,20 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
+    <distributionManagement>
+        <repository>
+            <id>testinium-mvn</id>
+            <url>https://mvn.testinium.com/repository/public/</url>
+        </repository>
+    </distributionManagement>
+
+    <repositories>
+        <repository>
+            <id>testinium-mvn</id>
+            <url>https://mvn.testinium.com/repository/public/</url>
+        </repository>
+    </repositories>
+
     <dependencies>
 
         <dependency>
@@ -63,6 +77,12 @@
             <groupId>io.appium</groupId>
             <artifactId>java-client</artifactId>
             <version>8.6.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.testinium</groupId>
+            <artifactId>testinium-appium2-driver</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
         </dependency>
 
     </dependencies>
