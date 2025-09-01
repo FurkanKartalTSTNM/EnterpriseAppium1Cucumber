@@ -11,10 +11,7 @@
 
     <properties>
         <java.version>23</java.version>
-        <h2.version>1.4.200</h2.version>
-        <commons.lang3.version>3.5</commons.lang3.version>
         <cucumber.junit.version>4.8.0</cucumber.junit.version>
-        <log4j.version>1.2.17</log4j.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
@@ -49,12 +46,6 @@
         </dependency>
 
         <dependency>
-            <groupId>log4j</groupId>
-            <artifactId>log4j</artifactId>
-            <version>${log4j.version}</version>
-        </dependency>
-
-        <dependency>
             <groupId>io.appium</groupId>
             <artifactId>java-client</artifactId>
             <version>8.6.0</version>
@@ -79,6 +70,12 @@
                     <source>23</source>
                     <target>23</target>
                 </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.2.5</version>
             </plugin>
         </plugins>
     </build>
