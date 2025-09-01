@@ -1,19 +1,10 @@
 package com.saha.cucumber.step;
 
 import com.saha.cucumber.driver.Hooks;
-
-
-
 import io.cucumber.java.en.Then;
 import org.openqa.selenium.By;
 
-
-
-
 import java.util.concurrent.TimeUnit;
-
-
-
 
 public class Steps {
 
