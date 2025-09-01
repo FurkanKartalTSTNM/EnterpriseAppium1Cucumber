@@ -9,11 +9,10 @@ import org.junit.runner.RunWith;
  */
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = "src/test/resources/features",   // feature yolu
-        glue = {"com.saha.cucumber.step"},          // STEPS PAKETİN tam adı
+        features = "src/test/resources/features",
+        glue = {"com.saha.cucumber.step"},
         plugin = {"pretty","summary"},
         monochrome = true
-        // tags'ı komuttan veriyorsun, burada bırakmıyoruz
 )
 public class CucumberRunner {
 }
