@@ -36,7 +36,7 @@ public class Hooks {
     @Before
     public void setUp() {
         try {
-            URL hubUrl = new URL("http://192.168.1.89:4723/");
+            URL hubUrl = new URL("http://host.docker.internal:4444/wd/hub");
 
             if (TestiniumEnvironment.isPlatformAndroid()) {
                 DesiredCapabilities caps = new DesiredCapabilities();
